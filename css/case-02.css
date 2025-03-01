@@ -1,0 +1,28 @@
+body{
+    background-color: #0057D9
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle-btn{
+    height: 400px;
+    width: 400px;
+    border:20px solid white;
+    background-color: grey;
+    border-radius: 50%;
+    border-top: solid 20px red;
+    cursor: pointer;
+}
+#btn-text{
+    color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+    position: fixed;
+}
+.middle-btn:hover{
+    transition: transform 1s ease-in-out;
+    transform:  rotate(360deg);
+}

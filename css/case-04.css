@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+.box{
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    border: 5px  solid red;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    animation: water-drop 2s ease-in-out infinite;
+}
+@keyframes water-drop {
+    from{
+        width: 1px;
+        height: 1px;
+    }
+    to{
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}

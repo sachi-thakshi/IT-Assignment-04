@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.rotate-box {
+    height: 100px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: blue;
+    animation: go-around-right 5s ease-in-out 0s infinite alternate;
+    /* Alternate between right and left */
+    position: absolute;
+}
+
+@keyframes go-around-right {
+    0% {
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+        background-color: blue;
+    }
+    25% {
+        top: 0;
+        left: calc(100% - 200px);
+        transform: rotate(180deg);
+        background-color: yellow;
+    }
+    50% {
+        top: calc(100% - 100px);
+        left: calc(100% - 200px);
+        transform: rotate(360deg);
+        background-color: red;
+    }
+    75% {
+        top: calc(100% - 100px);
+        left: 0;
+        transform: rotate(180deg);
+        background-color: deeppink;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+        background-color: blue;
+    }
+}
+
+@keyframes go-around-left {
+    0% {
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+        background-color: blue;
+    }
+    25% {
+        top: 0;
+        left: calc(100% - 200px);
+        transform: rotate(-180deg);
+        background-color: yellow;
+    }
+    50% {
+        top: calc(100% - 100px);
+        left: calc(100% - 200px);
+        transform: rotate(-360deg);
+        background-color: red;
+    }
+    75% {
+        top: calc(100% - 100px);
+        left: 0;
+        transform: rotate(-180deg);
+        background-color: deeppink;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+        background-color: blue;
+    }
+}
